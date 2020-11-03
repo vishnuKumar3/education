@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<title>EIC</title>
+<style>
+#six{border:1px solid black;width:180px;height:20px;padding:8px 8px 5px 10px;background:radial-gradient(white,lime);margin:130px 0px 0px 90px;position:absolute;font-family:sans-serif;border-radius:10px;font-size:15px;text-align:center;text-decoration:none;box-shadow:0px 5px 0px 0px black;}
+
+#seven{border:1px solid black;width:180px;height:20px;padding:8px 8px 5px 10px;background:radial-gradient(white,lime);margin:130px 0px 0px 860px;position:absolute;font-family:sans-serif;border-radius:10px;font-size:15px;text-decoration:none;text-align:center;box-shadow:0px 5px 0px 0px black;}
+
+#eight{border:1px solid black;width:180px;height:20px;padding:8px 8px 5px 10px;background:radial-gradient(white,violet);margin:210px 0px 0px 90px;position:absolute;font-family:sans-serif;border-radius:10px;font-size:15px;text-decoration:none;text-align:center;box-shadow:0px 5px 0px 0px black;}
+
+#nine{border:1px solid black;width:180px;height:20px;padding:8px 8px 5px 10px;background:radial-gradient(white,violet);margin:210px 0px 0px 860px;position:absolute;font-family:sans-serif;border-radius:10px;font-size:15px;text-decoration:none;text-align:center;box-shadow:0px 5px 0px 0px black;}
+
+#ten{border:1px solid black;width:180px;height:20px;padding:8px 8px 5px 10px;background:radial-gradient(white,orange);margin:290px 0px 0px 480px;position:absolute;font-family:sans-serif;border-radius:10px;font-size:15px;text-decoration:none;text-align:center;box-shadow:0px 5px 0px 0px black;}
+
+#eleven{border:1px solid black;width:180px;height:20px;padding:8px 8px 5px 10px;background:radial-gradient(white,red);margin:350px 0px 0px 90px;position:absolute;font-family:sans-serif;border-radius:10px;font-size:15px;text-decoration:none;text-align:center;box-shadow:0px 5px 0px 0px black;}
+
+#twelfth{border:1px solid black;width:180px;height:20px;padding:8px 8px 5px 10px;background:radial-gradient(white,red);margin:350px 0px 0px 860px;position:absolute;font-family:sans-serif;border-radius:10px;font-size:15px;text-decoration:none;text-align:center;box-shadow:0px 5px 0px 0px black;}
+
+#back{border:1px solid black;width:150px;height:20px;padding:8px 8px 5px 10px;background:radial-gradient(white,blue);margin:480px 0px 0px 510px;position:absolute;font-family:sans-serif;border-radius:10px;font-size:15px;text-decoration:none;text-align:center;}
+
+#edu{border:1px solid black;width:130px;height:20px;padding:8px 8px 8px 10px;background:radial-gradient(white,yellow);margin:30px 0px 0px 510px;position:absolute;font-family:sans-serif;border-radius:10px;font-size:18px;text-align:center;box-shadow:0px 10px 10px 0px black;color:white;text-shadow:1px 1px 2px black,1px 1px 2px blue,1px 1px 2px darkblue;}
+
+#six:active,#seven:active,#eight:active,#nine:active,#ten:active,#eleven:active,#twelfth:active {
+  box-shadow: 0px 0px 0px 0px black;
+  transform: translateY(5px);}
+
+#pre{opacity:0;margin:-1px 0px 0px 125px;transition:0.3s;position:absolute;}
+#pr{opacity:1;margin:-1px 0px 0px 30px;transition:0.3s;position:absolute;}
+#back:hover #pre{opacity:1;margin:-1px 0px 0px 97px;position:absolute;}
+#back:hover #pr{opacity:1;margin:-1px 0px 0px 15px;position:absolute;}
+#edu:hover{background:radial-gradient(white,blue,red 70%);}
+
+body{height:610px;background:radial-gradient(white,black)}
+</style>
+<body>
+<p id="edu">EDUCATION</p>
+<a id="six" href="#">SIXTH STANDARD</a>
+<a id="seven" href="#">SEVENTH STANDARD</a>
+<a id="eight" href="#">EIGHTH STANDARD</a>
+<a id="nine" href="#">NINETH STANDARD</a>
+<a id="ten" href="10.html">TENTH STANDARD</a>
+<a id="eleven" href="#">ELEVENTH STANDARD</a>
+<a id="twelfth" href="#">TWELFTH STANDARD</a>
+<a id="back" href="new2.html"><p id="pr">PREVIOUS</p> <p id="pre"><<</p></a>
+</body>
+<script>
+document.onselectstart=fun;
+function fun(){
+	return false;}
+</script>
+
+
+
+

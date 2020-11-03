@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<title>EIC</title>
+<style>
+body{background:radial-gradient(white,lime);height:610px;}
+#home{position:absolute;border:1px solid black;width:50px;height:20px;border-radius:10px;padding:5px;font-family:sans-serif;margin:60px 0px 0px 550px;text-decoration:none;background:radial-gradient(white,red);box-shadow:0px 5px 5px 0px black;}
+#edu{position:absolute;border:1px solid black;width:100px;height:20px;border-radius:10px;padding:5px;font-family:sans-serif;margin:200px 0px 0px 20px;text-decoration:none;background:radial-gradient(white,yellow);box-shadow:5px 5px 0px 0px black;}
+#inn{position:absolute;border:1px solid black;width:100px;height:20px;border-radius:10px;padding:5px;font-family:sans-serif;margin:200px 0px 0px 1100px;text-decoration:none;background:radial-gradient(white,blue);box-shadow:5px 5px 0px 0px black;}
+#edu:active,#inn:active{
+box-shadow:0px 0px 0px 0px black;
+transform:translateY(4px);}
+</style>
+<body>
+<a id="home" href="78">HOME</a>
+<a id="edu" href="new3.html">EDUCATION</a>
+<a id="inn" href="#">INNOVATION</a>
+</body>
+<script>
+document.onselectstart=fun;
+function fun(){
+	return false;}
+</script>

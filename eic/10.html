@@ -1,0 +1,77 @@
+<!doctype html>
+<title>EIC</title>
+<style>body{background:radial-gradient(white,yellow);height:610px;}
+	#class{position:absolute;text-transform:uppercase;color:yellow;font-family:sans-serif;margin:30px 0px 0px 520px;text-shadow:1px 1px 2px black,2px 2px 3px blue,3px 3px 5px yellow;font-size:22px;}
+	 .box{text-decoration:none;position:absolute;color:white;border:1px solid black;border-radius:10px;width:750px;height:30px;margin:170px 0px 0px 250px;font-size:20px;text-transform:uppercase;font-family:sans-serif;font-style:italic;padding-top:5px;text-indent:10px;}
+	.envelope{cursor:pointer;border:none;width:300px;height:400px;display:none;margin-bottom:30px;}
+	#main{box-shadow:0px 5px 0px black;cursor:pointer;border:1px solid black;width:200px;height:30px;position:absolute;margin:120px 0px 0px 250px;border-radius:10px;text-align:center;text-transform:uppercase;font-family:sans-serif;padding-top:10px;}
+#main:active{transform:translateY(5px);box-shadow:0px 0px 0px black;}
+</style>
+<body>
+<p id="class">tenth standard</p>
+<a id="main" onclick="myfunction('maths')" style="background:radial-gradient(white 30%,red);">Mathematics</a>
+<div id="maths" class="envelope">
+<a class="box" style="background:rgba(250,0,0,0.8);"></a>
+<a class="box" style="background:rgba(250,0,0,0.8);margin:210px 0px 0px 250px;"></a>
+<a class="box" style="background:rgba(250,0,0,0.8);margin:250px 0px 0px 250px;"></a>
+<a class="box" style="margin:290px 0px 0px 250px;background:rgba(250,0,0,0.8);"></a>
+<a class="box" style="margin:330px 0px 0px 250px;background:rgba(250,0,0,0.8);"></a>
+<a class="box" style="margin:370px 0px 0px 250px;background:rgba(250,0,0,0.8);"></a>
+<a class="box" style="margin:410px 0px 0px 250px;background:rgba(250,0,0,0.8);"></a>
+<a class="box" style="margin:450px 0px 0px 250px;background:rgba(250,0,0,0.8);"></a>
+<a class="box" style="margin:490px 0px 0px 250px;background:rgba(250,0,0,0.8);"></a>
+<a class="box" style="margin:530px 0px 0px 250px;background:rgba(250,0,0,0.8);"></a>
+</div>
+<a id="main" onclick="myfunction('physics')" style="margin:190px 0px 0px 250px;background:radial-gradient(white 30%,lime);">physical science</a>
+<div id="physics" class="envelope">
+<a class="box" style="background:lime;margin:240px 0px 0px 250px;"></a>
+<a class="box" style="margin:280px 0px 0px 250px;background:lime;"></a>
+<a class="box" style="margin:320px 0px 0px 250px;background:lime;"></a>
+<a class="box" style="margin:360px 0px 0px 250px;background:lime;"></a>
+<a class="box" style="margin:400px 0px 0px 250px;background:lime;"></a>
+<a class="box" style="margin:440px 0px 0px 250px;background:lime;"></a>
+<a class="box" style="margin:480px 0px 0px 250px;background:lime;"></a>
+<a class="box" style="margin:520px 0px 0px 250px;background:lime;"></a>
+<a class="box" style="margin:560px 0px 0px 250px;background:lime;"></a>
+<a class="box" style="margin:600px 0px 0px 250px;background:lime;"></a>
+</div>
+<a id="main" onclick="myfunction('biology')" style="margin:260px 0px 0px 250px;background:radial-gradient(white 30%,blue);">biological science</a>
+<div id="biology" class="envelope">
+<a href="1b.pdf" class="box" style="background:rgba(0,0,250,0.8);margin:320px 0px 0px 250px;">1.nutrition<sub style="font-size:15px;margin-left:10px;">-food supplying system</sub></a>
+<a class="box" style="background:rgba(0,0,250,0.8);margin:360px 0px 0px 250px;"></a>
+<a class="box" style="margin:400px 0px 0px 250px;background:rgba(0,0,250,0.8);"></a>
+<a class="box" style="margin:440px 0px 0px 250px;background:rgba(0,0,250,0.8);"></a>
+<a class="box" style="margin:480px 0px 0px 250px;background:rgba(0,0,250,0.8);"></a>
+<a class="box" style="margin:520px 0px 0px 250px;background:rgba(0,0,250,0.8);"></a>
+<a class="box" style="margin:560px 0px 0px 250px;background:rgba(0,0,250,0.8);"></a>
+<a class="box" style="margin:600px 0px 0px 250px;background:rgba(0,0,250,0.8);"></a>
+<a class="box" style="margin:640px 0px 0px 250px;background:rgba(0,0,250,0.8);"></a>
+<a class="box" style="margin:680px 0px 0px 250px;background:rgba(0,0,250,0.8);"></a>
+</div>
+</body>
+<script>
+document.onselectstart=select;
+function select(){
+	return false;}
+var ab;
+var maths=0;
+var physics=0;
+var biology=0;
+function myfunction(ab){
+if(ab=="maths"){maths++;physics=0;biology=0;}
+else if(ab=="physics"){physics++;maths=0;biology=0;}
+else if(ab=="biology"){biology++;maths=0;physics=0;}
+if(maths%2==1 || physics%2==1 || biology%2==1){
+var g=document.getElementsByClassName("envelope");
+var i;
+for(i=0;i<g.length;i++){
+	g[i].style.display="none";
+	}
+document.getElementById(ab).style.display="block";
+}
+else{
+	document.getElementById(ab).style.display="none";}}
+</script>
+
+
+
